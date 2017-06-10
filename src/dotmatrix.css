@@ -1,0 +1,64 @@
+/*
+	Dot-matrix theme
+*/
+.dot-matrix .toggle-button {
+	color: #333;
+	background: none;
+	border: none;
+	position: absolute;
+	left: 0px;
+	top: 5px;
+	float: left;
+}
+
+.dot-matrix h1 {
+	text-align: center;
+	display: block;
+	color: white;
+	font-size: 12.5vh;
+	font-weight: 700;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.time {
+
+}
+
+.dot-matrix {
+	font-family: "Oswald", sans-serif;
+	background-color: black;
+}
+
+.dot-matrix header {
+	padding: 10px 0px;
+	background-color: #0A96D4;
+
+}
+
+.dot-matrix table {
+	width: 100%;
+	border-spacing: 5px;
+}
+
+.dot-matrix thead {
+	font-size: 6vh;
+	color: white;
+}
+
+.dot-matrix tbody {
+	font-family: "scoreboard";
+	font-size: 20pt;
+	color: orange;
+	font-size: 6vh;
+}
+
+.dot-matrix tbody td {
+	background-color: #222;
+	border: 2px solid #222;
+    border-radius: 0.75vh;
+}
+
+.dot-matrix td:last-of-type {
+	padding-right: 5px;
+}

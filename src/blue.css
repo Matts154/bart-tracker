@@ -1,0 +1,48 @@
+/*
+	Blue theme
+*/
+.blue {
+	background-color: #033DAB;
+}
+
+.blue header {
+	background-color: #F3DEB1;
+	margin: 0px;
+	padding: 10px 0px;
+}
+
+.blue h1 {
+	text-align: center;
+	font-weight: normal;
+	font-size: 12.5vh;
+	margin: 0px;
+	padding: 0px;
+}
+
+.blue table {
+	width: 100%;
+	border-spacing: 0px;
+	font-size: 5.5vh;
+}
+
+.blue thead {
+	color: #222;
+	font-family: "Oswald", sans-serif;
+	background-color: #F3DEB1;
+}
+
+.blue tbody {
+	font-family: "Roboto", sans-serif;
+}
+
+.blue tbody tr:nth-child(even) {
+	color: white;
+
+	background-color: #052266;
+}
+
+.blue tbody tr:nth-child(odd) {
+	background-color: #033DAB;
+	color: #FFF667;
+
+}

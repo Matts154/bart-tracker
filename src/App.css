@@ -1,0 +1,103 @@
+/*.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}*/
+
+body {
+	width: 100%;
+	height: 100%;
+	background-color: black;
+}
+
+@font-face {
+	font-family: "scoreboard";
+	src: url("/fonts/scoreboard.ttf");
+}
+
+.container {
+	background-color: black;
+	height: 100%;
+}
+
+#panel {
+	height: 100vh;
+}
+
+.slideout-menu {
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 0;
+	width: 256px;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	display: none;
+	background-color: #B1B6B9;
+	background-image: url("brushed_metal_silver_texture_by_sweetsoulsister.jpg");
+	box-shadow: -5px 0px 7px grey inset;
+	font-family: "Roboto", sans-serif;
+}
+
+.options-menu {
+	margin-left: 15px;
+}
+
+.slideout-panel {
+	position: relative;
+	z-index: 1;
+	will-change: transform;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+	overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+	display: block;
+}
+
+.oswald {
+	font-family: "Oswald", sans-serif;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.light {
+	font-weight: 200;
+}
+
+.toggle-button {
+	border: none;
+	padding: none;
+	margin: none;
+	background: none;
+	position: absolute;
+	left: 0px;
+	top: 5px;
+}
