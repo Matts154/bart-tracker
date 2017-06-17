@@ -11,6 +11,8 @@ export function updateTrips({ origin, destination, numRoutes=4 }) {
 		mode: "cors"
 	}
 
+	if (numRoutes < 0) { return; }
+
 	dispatcher.dispatch({type: Constants.FETCH_TRIPS});
 
 	fetch(url, options)
@@ -43,6 +45,8 @@ export function updateTrips({ origin, destination, numRoutes=4 }) {
 }
 
 export function changeOrigin(station) {
+	if(!station) { return; }
+
 	dispatcher.dispatch({
 		type: Constants.CHANGE_ORIGIN,
 		station
@@ -50,6 +54,8 @@ export function changeOrigin(station) {
 }
 
 export function changeDestination(station) {
+	if(!station) { return; }
+	
 	dispatcher.dispatch({
 		type: Constants.CHANGE_DESTINATION,
 		station
