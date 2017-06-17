@@ -77,16 +77,13 @@ class App extends Component {
     handleOptionChange(event) {
         const key = event.target.id;
         const value = event.target.value;
-        let newState = {};
-
-        newState[event.target.id] = event.target.value;
 
         if (key === "timeout") {
             clearInterval(this.interval);
             this.interval = setInterval(this.refreshData.bind(this), value * 1000);
         }
 
-        this.setState(Object.assign({}, this.state, newState));
+        this.setState(Object.assign({}, this.state, {[key]: value}));
     }
 
     render() {
