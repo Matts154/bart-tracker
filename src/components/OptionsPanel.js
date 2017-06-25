@@ -31,6 +31,7 @@ class OptionsPanel extends Component {
 					<p>Timeout (in seconds)</p>
 					<input id="timeout" type="text" value={this.props.timeout}/>
 				</form>
+				<p className="credits">Background by <a className="author" href="http://sweetsoulsister.deviantart.com/art/Brushed-Metal-Silver-Texture-145936387">SweetSoulSister</a></p>
 			</nav>
 		);
 	}
